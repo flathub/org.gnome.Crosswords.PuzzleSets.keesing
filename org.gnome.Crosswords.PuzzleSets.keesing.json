@@ -3,7 +3,7 @@
 	"runtime": "org.gnome.Crosswords",
 	"runtime-version": "stable",
 	"branch": "1",
-	"sdk": "org.gnome.Sdk//42",
+	"sdk": "org.gnome.Sdk//43",
 	"build-extension": true,
 	"separate-locales": false,
 	"appstream-compose": false,
@@ -22,8 +22,8 @@
 				{
 					"type": "git",
 					"url": "https://gitlab.gnome.org/philip.goto/puzzle-sets-keesing.git",
-					"tag": "2.0",
-					"commit": "3a37c135ebd61c7ed1b237b322e5958309207fc8"
+					"tag": "2.1",
+					"commit": "b0b80d9980468a74a2aa5624d0132449f5ae80b9"
 				}
 			],
 			"post-install": [
