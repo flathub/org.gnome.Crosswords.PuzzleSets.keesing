@@ -22,8 +22,8 @@
 				{
 					"type": "git",
 					"url": "https://gitlab.gnome.org/philip.goto/puzzle-sets-keesing.git",
-					"tag": "3.0",
-					"commit": "cd54bdd6731a86250a57a61d2da13dfbd716c799"
+					"tag": "4.0",
+					"commit": "e1eb96ef8a591ca0a4043691c45ed3150c9525c9"
 				}
 			],
 			"post-install": [
