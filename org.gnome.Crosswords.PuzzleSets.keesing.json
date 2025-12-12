@@ -3,7 +3,7 @@
 	"runtime": "org.gnome.Crosswords",
 	"runtime-version": "stable",
 	"branch": "1",
-	"sdk": "org.gnome.Sdk//44",
+	"sdk": "org.gnome.Sdk//49",
 	"build-extension": true,
 	"separate-locales": false,
 	"appstream-compose": false,
@@ -22,14 +22,14 @@
 				{
 					"type": "git",
 					"url": "https://gitlab.gnome.org/philip.goto/puzzle-sets-keesing.git",
-					"tag": "4.3",
-					"commit": "b926953069f9f6f8e93d39cc7a8ffbb6d30c0d3d"
+					"tag": "4.4",
+					"commit": "765b29ed21f3843dc51da7c557998c5cd636b2b4"
 				}
 			],
 			"post-install": [
 				"install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ../org.gnome.Crosswords.PuzzleSets.keesing.metainfo.xml",
-				"appstream-compose --basename=org.gnome.Crosswords.PuzzleSets.keesing --prefix=${FLATPAK_DEST} --origin=flatpak org.gnome.Crosswords.PuzzleSets.keesing",
-				"install -Dm755 ../ikeesing.py ${FLATPAK_DEST}/bin/ikeesing"
+				"install -Dm755 ../ikeesing-wrapper.sh ${FLATPAK_DEST}/bin/ikeesing",
+				"install -Dm755 ../ikeesing.py ${FLATPAK_DEST}/libexec/ikeesing.py"
 			]
 		}
 	]
